@@ -7,6 +7,7 @@ let name="shivdeep"
 let age= 18
 let isLoggedIn = false
 
+//There are 7 primitive data types:
 //number => 2 to power 53
 //bigint
 //string =>""
