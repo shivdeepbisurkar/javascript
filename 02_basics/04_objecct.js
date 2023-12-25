@@ -26,8 +26,18 @@ const obj2={3:"c",4:"d"}
 // console.log(obj3);
 
 
-console.log(Object.keys(tinderuser));
-console.log(Object.values(tinderuser));
-console.log(Object.entries(tinderuser));
+// console.log(Object.keys(tinderuser));
+// console.log(Object.values(tinderuser));
+// console.log(Object.entries(tinderuser));
 
-console.log(tinderuser.hasOwnProperty('isLogged'));
+// console.log(tinderuser.hasOwnProperty('isLogged'));
+
+const course={
+    coursename:"JS",
+    price:"100",
+    name: "shivdeep"
+}
+
+const {coursename:cour}=course
+console.log(cour);
+
