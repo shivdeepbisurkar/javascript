@@ -22,3 +22,36 @@ for(const [key,value] of map){
 }
 
 
+const myObject={
+    game1:'NFS',
+    game2:'Spiderman'
+}
+// for(const [key,value] of myObject){
+//     // console.log(key, ':-', value);
+
+
+const coding =["js","ruby","java"]
+
+coding.forEach(function(val){
+    console.log(val)
+})
+
+coding.forEach((val)=>{console.log(val)})
+
+const myCoding=[
+    {
+        language: "java",
+        price:"99"
+    },
+    {
+        language: "javaScript",
+        price:"9"
+    },
+    {
+        language: "c",
+        price:"10"
+    }
+]
+myCoding.forEach((item)=>{
+    console.log(item.language);
+})
