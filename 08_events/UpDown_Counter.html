@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Up Down Counter</h1>
+    <button id="Start">Up</button>
+    <button id="Stop">Down</button>
+</body>
+<script>
+    const head=document.createElement('h1')
+    
+    const start=document.querySelector('#Start')
+    const end=document.querySelector('#Stop')
+    let count=0;
+    let interval
+    const up=function(){
+        count=count+1;
+        head.textContent=count
+    document.querySelector('body').appendChild(head)
+    }
+    const s= start.addEventListener('click',(e)=>{
+        clearInterval(interval);
+    interval = setInterval(up, 2000);
+    })
+    const down=function(){
+        count=count-1;
+        head.textContent=count
+    document.querySelector('body').appendChild(head)
+    }
+    const e=end.addEventListener('click',(e)=>{
+        clearInterval(interval);
+    interval = setInterval(down, 2000);
+    })
+    
+
+</script>
+</html>
